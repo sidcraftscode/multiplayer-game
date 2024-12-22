@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Multiplayer Game</title>
+    <style>
+        canvas {
+            border: 1px solid black;
+        }
+        #chatInput {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 300px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="gameCanvas"></canvas>
+    <input type="text" id="chatInput" placeholder="Type to chat..." maxlength="50">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
